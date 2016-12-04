@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Task №108</title>
+</head>
+<body>
+	<script>
+		function findNumber(n){
+var r=0;
+var pw=Math.pow(2,0);
+while(pw<=n){
+	r++;
+	pw=Math.pow(2,r);
+}
+alert("n="+n+"; r="+r+"; 2^r="+pw);
+}
+var N = prompt("Задайте натуральне число n");
+findNumber(N);
+
+	</script>
+</body>
+</html>

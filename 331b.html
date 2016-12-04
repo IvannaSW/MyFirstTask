@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Task №331b</title>
+</head>
+<body>
+	<script>
+		function findSqrt(n){
+var isTrue=0;
+var s;
+for (var x=0; x<n; x++){
+for (var y=0; y<n; y++){
+for (var z=0; z<n; z++){
+s=(x*x)+(y*y)+(z*z);
+//if ((s==n)&&(x!=y)&&(y!=z)&&(x!=z)) {
+if (s==n) {
+isTrue+=1;
+alert(n+"="+x+"^2"+"+"+y+"^2"+"+"+z+"^2"+" => "+"x="+x+" y="+y+" z="+z);
+}
+
+}
+
+}
+
+}
+if (isTrue==0) alert("Число n не можна представити у вигляді суми трьох квадратів");
+ else alert("Число n  можна представити у вигляді суми трьох квадратів у "+isTrue+" способів");
+ 
+}
+var N = prompt("Задайте натуральне число n");
+findSqrt(N);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
